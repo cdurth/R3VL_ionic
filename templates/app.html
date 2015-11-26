@@ -1,0 +1,105 @@
+<ion-view view-title="R3VL">
+    <ion-content scroll="false" ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" ng-style="{ 'background-image': randBackground }">
+            <div class="content">
+                <h3><a class="light">Connected:</a></h3>
+                <h4>Test's Party</h4>
+            </div>
+        </div>
+        <h4 class="content padding double-padding-x queue-title">Upcoming Songs:</h4>
+        <ion-content class="song-content">
+        <div class="list animate-fade-slide-in-right">
+            <ul class="list queue-list">
+               <li class="item">
+                   What's My Age Again - Blink 182
+               </li>
+               <li class="item">
+                   Fancy - Some Bitch
+               </li>
+               <li class="item">
+                  Basket Case - Green Day
+               </li>
+               <li class="item">
+                   What's My Age Again - Blink 182
+               </li>
+               <li class="item">
+                   What's My Age Again - Blink 182
+               </li>
+               <li class="item">
+                   What's My Age Again - Blink 182
+               </li>
+               <li class="item">
+                   What's My Age Again - Blink 182
+               </li>
+               <li class="item">
+                   What's My Age Again - Blink 182
+               </li>
+            </ul>
+        </div>
+      </ion-content>
+   </ion-content>
+        <button id="fab-profile" class="button button-fab button-r3vl addsong-fab" ng-click="modal.show()"><i class="icon ion-plus"></i></button>
+
+           <div class="tabs tabs-dark tabs-striped tabs-icon-top z-top">
+            <a class="tab-item active r3vl-tab" ui-sref="app.activity" class="tab-item">
+                <i class="icon ion-music-note"></i> Queue
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-chatbubbles"></i> Chat
+            </a>
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-gear-b"></i> Settings
+            </a>
+        </div>
+            <script id="my-modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">Add Song</h1>
+          <button class="button button-clear button-primary song-close" ng-click="modal.hide()"><i class="icon ion-close-round"></i></button>
+        </ion-header-bar>
+        <ion-content class="padding song-search">
+          <div class="list">
+
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Enter Song Title">
+    </label>
+    <button class="button button-small">
+      <i class="icon ion-search"></i>
+    </button>
+  </div>
+
+        <a class="item item-thumbnail-left" ui-sref="app.home">
+          <img src="img/docs/blue-album.jpg">
+          <h2>Weezer</h2>
+          <p>Blue Album</p>
+        </a>
+
+        <a class="item item-thumbnail-left" ui-sref="app.home">
+          <img src="img/docs/siamese-dream.jpg">
+          <h2>Smashing Pumpkins</h2>
+          <p>Siamese Dream</p>
+        </a>
+
+        <a class="item item-thumbnail-left" ui-sref="app.home">
+          <img src="img/docs/nevermind.jpg">
+          <h2>Nirvana</h2>
+          <p>Nevermind</p>
+        </a>
+
+        <a class="item item-thumbnail-left" ui-sref="app.home">
+          <img src="img/docs/license-to-ill.jpg">
+          <h2>Beastie Boys</h2>
+          <p>License To Ill</p>
+        </a>
+
+        <a class="item item-thumbnail-left" ui-sref="app.home">
+          <img src="img/docs/dookie.jpg">
+          <h2>Green Day</h2>
+          <p>Dookie</p>
+        </a>
+
+</div>
+        </ion-content>
+      </ion-modal-view>
+</ion-view>

@@ -1,0 +1,41 @@
+<ion-view view-title="R3VL">
+	<ion-content ng-class="{expanded:isExpanded}" ng-style="{ 'background-image': randBackground }">
+		<div class="card">
+			<div class="item item-divider">
+				Create a Party!
+			</div>
+			<div class="item item-text-wrap">
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Party Code</span>
+					<input type="text" placeholder="Party Code">
+				</label>
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Enter Password</span>
+					<input type="password" placeholder="Enter Password">
+				</label>
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Re-Enter Password</span>
+					<input type="password" placeholder="Re-Enter Password">
+				</label>
+			</div>
+			<div class="padding">
+				<button class="button button-block button-dark" ui-sref="main.app">Create Party!</button>
+			</div>
+		</div>
+		<div class="card">
+			<div class="item item-divider">
+				How to Create?
+			</div>
+			<div class="item item-text-wrap">
+				<ol>
+					<li>1) Enter a unique code for your party.</li>
+					<li>2) Enter a password to secure the admin area.</li>
+					<li>3) Re-Enter the password for confirmation</li>
+					<li>4) Wait for users to add songs and party!</li>
+				</ol>
+				<br>
+				<p>DO NOT GIVE OUT THE ADMIN PASSWORD!</p>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

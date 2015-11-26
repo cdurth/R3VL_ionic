@@ -1,0 +1,144 @@
+/* General
+==================================*/\
+h1 {
+    color: #fff;
+    text-shadow: 0 1px 0px #000;
+    font-size: 42px;
+}
+.button .icon {
+    vertical-align: initial;
+}
+
+.input-label {
+ width:100%;   
+}
+
+
+/* Utilities
+==================================*/
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.z-top {
+    z-index: 100;
+}
+
+
+/* Menu
+==================================*/
+.menu .bar.bar-header.expanded {
+    transition: all .5s ease-in-out;
+}
+
+.menu-open .bar.bar-header.expanded {
+    background-color: #222;
+}
+
+.menu h2 {
+    bottom: 0;
+    font-size: 18px;
+    left: 16px;
+    position: absolute;
+}
+
+.menu .avatar {
+    height: 88px;
+    width: 88px;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+
+/* Home
+==================================*/
+.app-icon {
+    background-color: #fff;
+    background: url('../img/icon.png') center;
+    background-size: cover;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+.hero {
+    height:150px;
+}
+
+.home-brand {
+    color:#ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+}
+
+.social-login {
+    position: fixed;
+    bottom: 0;
+}
+
+/* APP HOME */
+.queue-title {
+    border-bottom: solid 1px;    
+}
+
+.queue-list .item {
+    border-bottom: solid 1px;
+}
+
+.button-r3vl {
+    color:#ffffff;
+    background: #D63333;
+}
+.addsong-fab {
+    top: auto;
+    right: 10px;
+    bottom: 55px;
+    left: auto;
+    position: absolute;
+}
+.song-content {
+    margin-top: 170px;
+    overflow-y: scroll; 
+}
+.tabs-striped.tabs-dark .tab-item.tab-item-active, .tabs-striped.tabs-dark .tab-item.active, .tabs-striped.tabs-dark .tab-item.activated {
+    border-width: 4px 0 0 0;
+    border-color: #D63333;
+}
+/* MODAL STYLING */
+.song-search .list .item {
+    border-bottom: solid 1px;
+}
+.song-search .item-thumbnail-left .item-content .item-image, .item-thumbnail-left .item-content>img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left>img:first-child{
+    border-radius: 0;
+}
+/* JOIN */
+.input-underline input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px black;
+  transition: border 0.3s;
+}
+.input-underline input[type="text"]:focus,
+.input-underline  input[type="text"].focus {
+  border-bottom: solid 2px #D63333;
+}

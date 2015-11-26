@@ -1,0 +1,30 @@
+<ion-view view-title="R3VL">
+    <ion-content ng-class="{expanded:isExpanded}" ng-style="{ 'background-image': randBackground }">
+        <div class="card">
+            <div class="item item-divider">
+                Join a Party!
+            </div>
+            <div class="item item-text-wrap">
+                <label class="item item-input item-floating-label input-underline">
+                    <span class="input-label">Enter Party Code</span>
+                    <input type="text" placeholder="Enter Party Code">
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-dark"  ui-sref="main.app">Join Party!</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                How to Join?
+            </div>
+            <div class="item item-text-wrap">
+                <ol>
+                    <li>1) Ask around for the party code.</li>
+                    <li>2) Enter the code in the box below.</li>
+                    <li>3) Click "Join Party!" to connect!</li>
+                </ol>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
